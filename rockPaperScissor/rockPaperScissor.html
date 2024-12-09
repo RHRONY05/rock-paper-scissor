@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <!-- <html data-theme="light"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="rockPaperScissor.css">
+</head>
+
+<body>
+    <div class="msg-cont hide">
+        <p id="msg">winner!</p>
+        <button class="new">New Game</button>
+    </div>
+
+    <div class="container">
+        <div class="game flex-center">
+            <h1 id="heading">Rock-Paper-Scissors</h1>
+
+            <div class="set-score flex-center">
+                <h3 id="score" class="score"><b>Set Score:</b></h3>
+                <input type="text" class="set-input" id="input" value="0" required>
+            </div>
+
+            <button class="start-game new">Start game</button>
+
+            <button class="reset-game new ">Reset game</button>
+            <div class="game-part ">
+                <div class="rock-box">
+                    <button class="rock box">
+                        <img src="images/rock.png" alt="rock">
+                    </button>
+                    <p class="text">Rock</p>
+                </div>
+                <div class="paper-box">
+                    <button class="paper box">
+                        <img src="images/paper.png" alt="paper">
+                    </button>
+                    <p class="text">Paper</p>
+                </div>
+                <div class="scissor-box">
+                    <button class="scissor box">
+                        <img id="scissor" src="images/scissor3-bg.png" alt="scissor">
+                    </button>
+                    <p class="text">Scissor</p>
+                </div>
+            </div>
+
+            <div class="score-card flex-center ">
+                <h3 id="score-card"><b>Score-Card:</b></h3>
+                <span class="draw flex-center">
+                    <h3 class="total-score"><b>Total Score:</b></h3>
+                    <p id="t-point" class="point">0</p>
+                </span>
+                <div class="message">
+                    <p id="message">Your Turn:</p>
+                </div>
+                <div class="score-box flex-center">
+                    <span class="you flex-center">
+                        <h3 class="player"><b>You:</b></h3>
+                        <p id="you" class="point">0</p>
+                    </span>
+                    <span class="computer flex-center">
+                        <h3 class="player"><b>Computer:</b></h3>
+                        <p id="computer" class="point">0</p>
+                    </span>
+                </div>
+                <div class="draw">
+                    <span class="draw flex-center">
+                        <h3 class="player draw"><b>Draw:</b></h3>
+                        <p id="draw" class="point">0</p>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="rockPaperScissor.js"></script>
+</body>
+
+</html>
